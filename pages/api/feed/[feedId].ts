@@ -14,8 +14,11 @@ export default function handler(
 ) {
   switch (req.method) {
     case RequestMethodEnum.GET:
-        const foundFeed = getFeedMock.feed.find(feedItem => feedItem.i === req?.query?.id)|| null
-        res.status(foundFeed? 200: 404).send(foundFeed)
+        const feedId = req?.query?.id
+        const foundFeed = getFeedMock.feed.find(feedItem => feedItem.i === feedId)|| null
+        res.status(200).send(foundFeed || {
+          message:'Feed not found'
+        })
   
     default:
         break;
