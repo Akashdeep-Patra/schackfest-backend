@@ -8,7 +8,7 @@ import {Avatar, List, Row, Skeleton} from "antd";
 import FilterCategory from "../../components/FilterCategory";
 
 
-const ExplorePage: NextPage = () => {
+const CategoryExplorePage: NextPage = () => {
 
     const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
 
@@ -68,4 +68,4 @@ const ExplorePage: NextPage = () => {
     );
 };
 
-export default ExplorePage;
+export default CategoryExplorePage;

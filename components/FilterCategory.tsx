@@ -17,9 +17,16 @@ export default function FilterCategory({filters,handleChangeCategory}: {filters:
     return (
         <Row wrap={false} style={{overflow: "scroll",margin: "2px"}} className="filter-box">
             {
-                filters.map((filter:any)=>{
+                filters.map((filter:any,index:number)=>{
                     return (
-                        <Button type="text" key={filter.category} onClick={()=>handleButtonClick(filter.category)} style={{color: selectedFilter === filter.category ? "#ff8700" : "white" }} className="filter-button">
+                        <Button key={filter.category} onClick={()=>handleButtonClick(filter.category)}
+                                style={{
+                                    color: selectedFilter === filter.category ? "black" : "#F1F1F1",
+                                    backgroundColor: selectedFilter === filter.category ? "white" : "black",
+                                    lineHeight: "0.5rem",
+                                    fontSize: "12px",
+                                    outline: "unset !important"
+                                }} className="filter-button">
                             {filter.category}
                         </Button>
                     )

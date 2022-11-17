@@ -13,7 +13,7 @@ export default function CategoryFeed({ categoryData }: { categoryData: any }) {
                         <Row key={category.category} style={{marginBottom: "12px"}}>
                             <Row align="middle" justify="space-between" style={{height: "48px",width: "100%",marginRight: "4px"}}>
                                 <div className="flex-box">
-                                    <Avatar style={{ backgroundColor: '#f56a00',marginRight: '4px' }}>{category.userName[0].toUpperCase()}</Avatar>
+                                    <Avatar src={ category?.profilePic || "https://cdn.sharechat.com/295d8c15_1597741425818.png"} style={{ backgroundColor: '#f56a00',marginLeft: '6px',marginRight: '8px' }}/>
                                     <span className="category-text">{category.category}</span>
                                 </div>
                                 <Col className="see-all-text-box">

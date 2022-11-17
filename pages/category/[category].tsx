@@ -40,7 +40,7 @@ const ExplorePage: NextPage = () => {
                                 })
                             }
                         </div> :
-                        <Row align="middle" justify="center">
+                        <Row align="middle" justify="space-around">
                             <CategoryWisePosts posts={categoryWisePosts?.data?.payload?.posts || []}/>
                         </Row>
                 }
