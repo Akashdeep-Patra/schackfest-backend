@@ -1,4 +1,3 @@
-import { ICategory } from './types';
 import axios from "axios";
 
 export const getAllCategoryData = (key:string,name: string) =>

@@ -4,7 +4,8 @@ import CategoryFeed from "../../components/CategoryFeed";
 import SearchCategory from "../../components/SearchCategory";
 import {useEffect, useState} from "react";
 import useSWR from "swr";
-import {Avatar, Col, List, Row, Skeleton} from "antd";
+import {Avatar, List, Row, Skeleton} from "antd";
+import FilterCategory from "../../components/FilterCategory";
 
 
 const ExplorePage: NextPage = () => {
@@ -42,6 +43,7 @@ const ExplorePage: NextPage = () => {
     return (
         <div className="explore-page">
             <SearchCategory availableCategoryData = {categoryFiltersData?.data?.data?.feed || []} handleChangeCategory={handleChangeCategory}/>
+            <FilterCategory filters={categoryFiltersData?.data?.data?.feed || []}  handleChangeCategory={handleChangeCategory}/>
             {
                 isCategoryDataLoading ?
                     <div>
@@ -60,8 +62,7 @@ const ExplorePage: NextPage = () => {
                                 )
                             })
                         }
-                    </div>
-                    :  <CategoryFeed categoryData={categoryData?.data || []}/>
+                    </div> : <CategoryFeed categoryData={categoryData?.data || []}/>
             }
         </div>
     );

@@ -57,3 +57,15 @@ a {
   display: flex;
   align-items: center;
 }
+.ant-btn {
+  margin: 4px !important;
+  padding: 4px !important;
+  border-radius: 8px !important;
+}
+.filter-box {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.filter-box::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}

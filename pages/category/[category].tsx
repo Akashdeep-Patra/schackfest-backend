@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
-import {getAllCategoryData, getCategoryWiseData} from '../../services';
+import {getCategoryWiseData} from '../../services';
 import CategoryWisePosts from "../../components/CategoryWisePosts";
-import {Avatar, List, Row, Skeleton} from "antd";
+import {List, Row, Skeleton} from "antd";
 import {useRouter} from "next/router";
 import useSWR from "swr";
 

@@ -1,6 +1,5 @@
 import {Select} from "antd";
 export default function SearchCategory({availableCategoryData, handleChangeCategory}: {availableCategoryData: any,handleChangeCategory:any}){
-
     return (
         <div style={{padding: "4px"}}>
             <Select
@@ -8,6 +7,7 @@ export default function SearchCategory({availableCategoryData, handleChangeCateg
                 style={{
                     width: "100%",
                 }}
+                placeholder="Search Category"
                 tokenSeparators={[","]}
                 onChange={(category: string[]) => handleChangeCategory(category)}
             >
