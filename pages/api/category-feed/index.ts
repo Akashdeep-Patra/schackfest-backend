@@ -16,6 +16,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     
     const paramCategories = (req.query?.categories as string)?.split?.(',') || categories;
     
-    const filteredFeed = feed.payload.posts.filter(post=> post.categories.some(_category=> paramCategories.includes(_category))) 
-  res.status(200).send(filteredFeed);
+    const filteredFeed = feed.payload.posts.filter(post=> post.categories.some(_category=> paramCategories.includes(_category)))
+    feed.payload.posts = filteredFeed; 
+  res.status(200).send(feed);
 }
