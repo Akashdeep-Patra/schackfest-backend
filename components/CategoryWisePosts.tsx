@@ -8,7 +8,7 @@ export default function CategoryWisePosts({posts}: { posts: any }){
             {
                posts.map((post: any,index: number)=>(
                     <Col key={index} style={{marginRight: "4px"}}>
-                        <VideoCard url={post.v || ""} />
+                        <VideoCard videoUrl={post.v || ""} imgUrl={post.b || ""}/>
                     </Col>
                 ))
             }

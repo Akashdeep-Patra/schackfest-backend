@@ -1,11 +1,12 @@
 
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 interface IVideoCard {
-  url:string
+  videoUrl:string;
+  imgUrl: string;
 }
 
-function VideoCard({ url }: IVideoCard) {
+function VideoCard({ videoUrl,imgUrl }: IVideoCard) {
 
   const videoRef = React.useRef<HTMLVideoElement>(null);
 
@@ -14,21 +15,24 @@ function VideoCard({ url }: IVideoCard) {
     if (elem === null) return;
     if (elem.requestFullscreen) {
       elem.requestFullscreen();
+      elem.play();
     } else if ((elem as any).webkitRequestFullscreen) {
       /* Safari */
       (elem as any).webkitRequestFullscreen();
+      elem.play();
     } else if ((elem as any).msRequestFullscreen) {
       /* IE11 */
       (elem as any).msRequestFullscreen();
+      elem.play();
     }
   };
 
   return (
           <video
-            src={url}
+            src={videoUrl}
             ref={videoRef}
             muted
-            autoPlay
+            poster={imgUrl}
             className="video-card"
             onClick={handleClickFullScreen}
           />
