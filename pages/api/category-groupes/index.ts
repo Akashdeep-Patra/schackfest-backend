@@ -25,8 +25,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       paramCategories = categories;
     }
 
-    let limitedCategories = [...stories.data.feed]
-    const data = await Promise.all(limitedCategories.filter(_cat=>paramCategories.includes(_cat.category)).map(async (category)=>{
+    let limitedCategories = [...stories.data.feed.filter(_cat=>paramCategories.includes(_cat.category))];
+    const data = await Promise.all(limitedCategories.map(async (category)=>{
         const _data =  await axios.get(`https://schackfest-backend.vercel.app/api/category-feed`,{
           params:{
             categories:category,
