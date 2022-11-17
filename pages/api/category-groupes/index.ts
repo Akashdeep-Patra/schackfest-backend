@@ -4,6 +4,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import stories from '../../../mocks/stories';
 import { paginateArray } from '../../../util';
 import categories from '../../../mocks/categories';
+import axios from 'axios';
 
 
 export enum RequestMethodEnum {
@@ -14,8 +15,13 @@ export enum RequestMethodEnum {
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     const limitedCategories = paginateArray(stories.data.feed,10,1);
     const data = await Promise.all(limitedCategories.map(async (category)=>{
-        const _data =  await fetch(`https://schackfest-backend.vercel.app/api/category-feed?categories=${category}`);
-        return await _data.json();
+        const _data =  await axios.get(`http:localhost:3000/api/category-feed`,{
+          params:{
+            categories:category,
+            limit: 5,
+          }
+        });
+        return _data.data?.payload?.posts??[]
     }))
     const finalData = limitedCategories.map((cat,index)=>{
         return {...cat,posts:data[index]}
