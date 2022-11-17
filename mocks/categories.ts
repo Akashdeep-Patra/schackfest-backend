@@ -28,15 +28,6 @@ const categories = [
   'Astrology',
   'Information & Commerce',
   'Patriotism / Nationalism',
-  'Drama',
-  'hunting',
-  'Health & Fitness',
-  'Romance & Heartbreak',
-  'TV & Movies',
-  'comics',
-  'boxing',
-  'Culture & History',
-  'Offbeat',
 ];
 
 
