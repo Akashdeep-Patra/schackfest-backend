@@ -15,9 +15,10 @@ export enum RequestMethodEnum {
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
     // offset limit
     const { limit = 10, offset = 1} = req.query
+    const feedCopy = JSON.parse(JSON.stringify(feed))
     const paramCategories = (req.query?.categories as string)?.split?.(',') || categories;
     const filteredFeed = feed.payload.posts.filter(post=> post.categories.some(_category=> paramCategories.includes(_category)))
-    feed.payload.totalCount = filteredFeed.length;
-    feed.payload.posts = paginateArray(filteredFeed,Number(limit),Number(offset)); 
-    res.status(200).send(feed);
+    feedCopy.payload.totalCount = filteredFeed.length;
+    feedCopy.payload.posts = paginateArray(filteredFeed,Number(limit),Number(offset)); 
+    res.status(200).send(feedCopy);
 }
