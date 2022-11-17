@@ -12,7 +12,7 @@ export enum RequestMethodEnum {
 }
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-    console.log(req.query.categories);
+    // offset limit
     
     const paramCategories = (req.query?.categories as string)?.split?.(',') || categories;
     

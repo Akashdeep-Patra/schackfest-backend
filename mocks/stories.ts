@@ -12,6 +12,7 @@ const stories = {
         isSelf: false,
         hasActiveStory: true,
         category: 'Acting (general)',
+        isPinned: true,
       },
       {
         creatorId: 'mko19cogb7',
@@ -23,6 +24,7 @@ const stories = {
         isSelf: false,
         hasActiveStory: true,
         category: 'Dance',
+        isPinned: true,
       },
       {
         creatorId: 'x6ih0qt1hy',
@@ -34,6 +36,7 @@ const stories = {
         isSelf: false,
         hasActiveStory: true,
         category: 'Acting',
+        isPinned: true,
       },
       {
         creatorId: 'c1vm6k5lbl',
@@ -595,6 +598,7 @@ const stories = {
         isSelf: false,
         hasActiveStory: true,
         category: 'Offbeat',
+        isSeeAll: true,
       },
     ],
     nextOffset: -1,
