@@ -15,7 +15,7 @@ feed.payload.posts = [...feed.payload.posts.slice(1,81),
                     ]
 feed.payload.totalCount = feed.payload.posts.length;
 const newFeed = feed.payload.posts.map(post => {
-    post['categories'] = [categories[randomInRange(categories.length)] , categories[randomInRange(categories.length)]]
+    post['categories'] = categories;
     return post
 })
 console.log(feed.payload.posts.length);
