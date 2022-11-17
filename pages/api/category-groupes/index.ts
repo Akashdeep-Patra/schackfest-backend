@@ -13,8 +13,9 @@ export enum RequestMethodEnum {
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-    const limitedCategories = paginateArray(stories.data.feed,10,1);
-    const data = await Promise.all(limitedCategories.map(async (category)=>{
+    const paramCategories = (req.query?.categories as string)?.split?.(',') || categories;
+    const limitedCategories = [...stories.data.feed]
+    const data = await Promise.all(limitedCategories.filter(_cat=>paramCategories.includes(_cat.category)).map(async (category)=>{
         const _data =  await axios.get(`https://schackfest-backend.vercel.app/api/category-feed`,{
           params:{
             categories:category,
