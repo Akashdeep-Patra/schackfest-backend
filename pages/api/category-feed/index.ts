@@ -1,5 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next';
+import NextCors from 'nextjs-cors';
 import categories from '../../../mocks/categories';
 import feed from '../../../mocks/category_feed';
 import { paginateArray } from '../../../util';
@@ -12,7 +13,13 @@ export enum RequestMethodEnum {
   POST = 'POST',
 }
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  await NextCors(req, res, {
+    // Options
+    methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+    origin: '*',
+    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+ });
     // offset limit
     const { limit = 10, offset = 1} = req.query
     const feedCopy = JSON.parse(JSON.stringify(feed))
