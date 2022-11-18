@@ -229,6 +229,7 @@ const stories = {
         hasActiveStory: true,
         category: 'Motivation',
         isPinned: false,
+        isApplyCta: true,
       },
       {
         creatorId: 'pmtuv4os7m',
