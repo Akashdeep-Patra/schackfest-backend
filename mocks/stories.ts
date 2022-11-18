@@ -87,18 +87,6 @@ const stories = {
         isPinned: false,
       },
       {
-        creatorId: '4ojizdqws6',
-        unSeen: false,
-        profilePic: 'https://img.icons8.com/3d-fluency/94/null/moosebear.png',
-        userHandle: 'Pets',
-        userName: 'Pets',
-        following: true,
-        isSelf: false,
-        hasActiveStory: true,
-        category: 'Pets',
-        isPinned: false,
-      },
-      {
         creatorId: 'lcyxs7e1m8',
         unSeen: false,
         profilePic: 'https://img.icons8.com/3d-fluency/94/null/user-group-man-woman.png',
