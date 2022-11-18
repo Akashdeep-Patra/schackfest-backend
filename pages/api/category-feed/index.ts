@@ -21,7 +21,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
  });
     // offset limit
-    const { limit = 10, offset = 1} = req.query
+    let { limit = 10, offset = 1} = req.query
+    if(limit === 0 ){
+      limit =1;
+    }
     const feedCopy = JSON.parse(JSON.stringify(feed))
     const paramCategories = (req.query?.categories as string)?.split?.(',') || categories;
     const filteredFeed = feed.payload.posts.filter(post=> post.categories.some(_category=> paramCategories.includes(_category)))
