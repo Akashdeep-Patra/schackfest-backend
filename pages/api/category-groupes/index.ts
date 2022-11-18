@@ -5,7 +5,7 @@ import stories from '../../../mocks/stories';
 import categories from '../../../mocks/categories';
 import axios from 'axios';
 import NextCors from 'nextjs-cors';
-import { paginateArray } from '../../../util/index';
+import feed from '../../../mocks/category_feed';
 
 
 export enum RequestMethodEnum {
@@ -24,20 +24,20 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     if(!paramCategories[0]){
       paramCategories = categories;
     }
-
-    let limitedCategories = [...stories.data.feed.filter(_cat=>paramCategories.includes(_cat.category))];
-    const data = await Promise.all(limitedCategories.map(async (category)=>{
-        const _data =  await axios.get(`https://schackfest-backend.vercel.app/api/category-feed`,{
-          params:{
-            categories:category,
-            limit: 5,
-          }
-        });
-        return _data.data?.payload?.posts??[]
-    }))
-    limitedCategories = paginateArray(limitedCategories, 10, 1);
-    const finalData = limitedCategories.map((cat,index)=>{
-        return {...cat,posts:data[index]}
+    const filteredCategories = stories.data.feed.filter( cat => paramCategories.includes(cat.category))
+    const injectedCategory = filteredCategories.map((cat)=>{
+      const foundPosts = [];
+      let count = 0;
+      while(count!==feed.payload.posts.length && foundPosts.length<5){
+        if(feed.payload.posts[count]?.categories.includes(cat.category)){
+          foundPosts.push(feed.payload.posts[count])
+        }
+        count++;
+      }
+      return {
+        ...cat,
+        posts: foundPosts,
+      }
     })
-  res.status(200).send(finalData);
+  res.status(200).send(injectedCategory);
 }
