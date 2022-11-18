@@ -65,7 +65,7 @@ const stories = {
       {
         creatorId: '8w1bs36qjo',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://storage.googleapis.com/sharechat-content-asia/undraw_Pic_profile_re_7g2h.png',
         userHandle: 'Others',
         userName: 'Others',
         following: true,
@@ -246,7 +246,7 @@ const stories = {
       {
         creatorId: 'poaph355r6',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://storage.googleapis.com/sharechat-content-asia/undraw_Pic_profile_re_7g2h.png',
         userHandle: 'Profession',
         userName: 'Profession',
         following: true,
@@ -258,7 +258,7 @@ const stories = {
       {
         creatorId: '5r65oryx1f',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://storage.googleapis.com/sharechat-content-asia/undraw_Pic_profile_re_7g2h.png',
         userHandle: 'Automobiles/Gadgets',
         userName: 'Automobiles/Gadgets',
         following: true,
@@ -270,7 +270,7 @@ const stories = {
       {
         creatorId: 'feiof32ros',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://storage.googleapis.com/sharechat-content-asia/undraw_Pic_profile_re_7g2h.png',
         userHandle: 'Animals',
         userName: 'Animals',
         following: true,
@@ -282,7 +282,7 @@ const stories = {
       {
         creatorId: 'e5ti2qw3r0',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://storage.googleapis.com/sharechat-content-asia/undraw_Pic_profile_re_7g2h.png',
         userHandle: 'Life',
         userName: 'Life',
         following: true,
@@ -294,7 +294,7 @@ const stories = {
       {
         creatorId: '55mloao4um',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://storage.googleapis.com/sharechat-content-asia/undraw_Pic_profile_re_7g2h.png',
         userHandle: 'Astrology',
         userName: 'Astrology',
         following: true,
@@ -306,7 +306,7 @@ const stories = {
       {
         creatorId: 'kufmo5n42t',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://storage.googleapis.com/sharechat-content-asia/undraw_Pic_profile_re_7g2h.png',
         userHandle: 'Commerce',
         userName: 'Commerce',
         following: true,
@@ -318,7 +318,7 @@ const stories = {
       {
         creatorId: 'zs0mi72vjd',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://storage.googleapis.com/sharechat-content-asia/undraw_Pic_profile_re_7g2h.png',
         userHandle: 'Patriotism/Nationalism',
         userName: 'Patriotism/Nationalism',
         following: true,
