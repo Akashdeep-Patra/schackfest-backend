@@ -5,7 +5,7 @@ const stories = {
       {
         creatorId: '3ozsu429zo',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/color/48/null/actress-skin-type-4.png',
         userHandle: 'Acting',
         userName: 'Acting',
         following: true,
@@ -17,7 +17,7 @@ const stories = {
       {
         creatorId: '15vux0vz8t',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/color/48/null/tango.png',
         userHandle: 'Dance',
         userName: 'Dance',
         following: true,
@@ -29,7 +29,7 @@ const stories = {
       {
         creatorId: '3lfpdlcv73',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/color/48/null/lipstick.png',
         userHandle: 'Fashion',
         userName: 'Fashion',
         following: true,
@@ -41,7 +41,7 @@ const stories = {
       {
         creatorId: 'bzukg2j2gz',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/color/48/null/hamburger.png',
         userHandle: 'Food',
         userName: 'Food',
         following: true,
@@ -53,7 +53,7 @@ const stories = {
       {
         creatorId: 'g39z1k642n',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/3d-fluency/94/null/football2.png',
         userHandle: 'Sports',
         userName: 'Sports',
         following: true,
@@ -77,7 +77,7 @@ const stories = {
       {
         creatorId: 'ti1l6dmlg5',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/3d-fluency/94/null/3d-fluency-retro-tv.png',
         userHandle: 'Comedy',
         userName: 'Comedy',
         following: true,
@@ -89,7 +89,7 @@ const stories = {
       {
         creatorId: 'pbpayy45i7',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/3d-fluency/94/null/music.png',
         userHandle: 'Music',
         userName: 'Music',
         following: true,
@@ -101,7 +101,7 @@ const stories = {
       {
         creatorId: '2owdyu8or0',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/3d-fluency/94/null/camera.png',
         userHandle: 'Photography',
         userName: 'Photography',
         following: true,
@@ -113,7 +113,7 @@ const stories = {
       {
         creatorId: 'toekb87ine',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/3d-fluency/94/null/magazine.png',
         userHandle: 'News',
         userName: 'News',
         following: true,
@@ -125,7 +125,7 @@ const stories = {
       {
         creatorId: '4ojizdqws6',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/3d-fluency/94/null/moosebear.png',
         userHandle: 'Pets',
         userName: 'Pets',
         following: true,
@@ -137,7 +137,7 @@ const stories = {
       {
         creatorId: 'lcyxs7e1m8',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/3d-fluency/94/null/user-group-man-woman.png',
         userHandle: 'Family',
         userName: 'Family',
         following: true,
@@ -149,7 +149,7 @@ const stories = {
       {
         creatorId: 'rmpq30u8v6',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/3d-fluency/94/null/3d-fluency-game-controller.png',
         userHandle: 'Gaming',
         userName: 'Gaming',
         following: true,
@@ -161,7 +161,7 @@ const stories = {
       {
         creatorId: 'iihooq3vpu',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/3d-fluency/94/null/like--v6.png',
         userHandle: 'Devotion',
         userName: 'Devotion',
         following: true,
@@ -173,7 +173,7 @@ const stories = {
       {
         creatorId: 'ljc8sgf3g3',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/external-flaticons-flat-flat-icons/64/null/external-arts-and-crafts-stay-at-home-flaticons-flat-flat-icons.png',
         userHandle: 'Arts/Crafts',
         userName: 'Arts/Crafts',
         following: true,
@@ -185,7 +185,7 @@ const stories = {
       {
         creatorId: 'k9tnjxct4z',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/external-ddara-lineal-color-ddara/64/null/external-gymnast-circus-carnival-ddara-lineal-color-ddara-2.png',
         userHandle: 'Gymnastics',
         userName: 'Gymnastics',
         following: true,
@@ -197,7 +197,7 @@ const stories = {
       {
         creatorId: 'p89rinhvqr',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/clouds/100/null/passenger-with-baggage.png',
         userHandle: 'Travel/Adventure',
         userName: 'Travel/Adventure',
         following: true,
@@ -209,7 +209,7 @@ const stories = {
       {
         creatorId: 'rsyya0dqmv',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/arcade/64/null/graduation-cap.png',
         userHandle: 'Education',
         userName: 'Education',
         following: true,
@@ -221,7 +221,7 @@ const stories = {
       {
         creatorId: 'fd3d33awmn',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-motivation-team-building-flaticons-lineal-color-flat-icons.png',
         userHandle: 'Motivation',
         userName: 'Motivation',
         following: true,
@@ -233,7 +233,7 @@ const stories = {
       {
         creatorId: 'pmtuv4os7m',
         unSeen: false,
-        profilePic: 'https://cdn.sharechat.com/5466523834_1643205790623.jpeg',
+        profilePic: 'https://img.icons8.com/fluency/48/null/creativity.png',
         userHandle: 'Talent',
         userName: 'Talent',
         following: true,
