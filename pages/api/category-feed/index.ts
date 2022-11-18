@@ -22,8 +22,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
  });
     // offset limit
     let { limit = 10, offset = 1} = req.query
-    if(limit === 0 ){
-      limit =1;
+    if(offset === 0 ){
+      offset =1;
     }
     const feedCopy = JSON.parse(JSON.stringify(feed))
     const paramCategories = (req.query?.categories as string)?.split?.(',') || categories;
